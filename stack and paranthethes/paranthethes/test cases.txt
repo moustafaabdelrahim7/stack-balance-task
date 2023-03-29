@@ -1,0 +1,185 @@
+1. Test Case 1
+- Ask the user for an expression
+- Write this expression {(2+3)}               BALANCED
+2. Test Case 2
+- Ask the user for an expression
+- Write this expression {((2+3)}             UNBALANCED 
+3. Test Case 3
+- Ask the user for an expression
+- Write this expression [(2+3)]               BALANCED
+4. Test Case 4
+- Ask the user for an expression
+- Write this expression {(2+3)/((3+3)*(15-10))}    BALANCED        
+5. Test Case 5
+- Ask the user for an expression
+- Write this expression (2+3)/((3+3)*(15-10))      BALANCED
+6. Test Case 6
+- Ask the user for an expression
+- Write this expression {{2+3)/((3+3)*(15-10)))     unbalanced
+7. Test Case 7
+- Ask the user for an expression
+- Write this expression {(2+3(/((3+3)*(15-10))}    unbalanced
+8. Test Case 8
+- Ask the user for an expression
+- Write this expression {(2+3)/((3+3(*)15-10))}    BALANCED
+9. Test Case 9
+- Ask the user for an expression
+- Write this expression })2+3)/((3+3)*(15-10))}   UNBALANCED
+10. Test Case 10
+- Ask the user for an expression
+- Write this expression {(2+3)/(<3+3>*(15-10))}     BALANCED
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************/
+ 
+        /**************************************/
+        createEmptyStack(&new_stak);
+         printf("{((2+3)}\n");
+    returns_status = isBalancedParanthethes("{((2+3)}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /*******************************************/
+        createEmptyStack(&new_stak);
+         printf("[(2+3)]\n");
+    returns_status = isBalancedParanthethes("[(2+3)]");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /*********************************************/
+          createEmptyStack(&new_stak);
+         printf("{(2+3)/((3+3)*(15-10))}\n");
+    returns_status = isBalancedParanthethes("{(2+3)/((3+3)*(15-10))}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /**********************************************/
+        createEmptyStack(&new_stak);
+         printf("(2+3)/((3+3)*(15-10))\n");
+    returns_status = isBalancedParanthethes("(2+3)/((3+3)*(15-10))");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /*************************************************/
+        createEmptyStack(&new_stak);
+         printf("{{2+3)/((3+3)*(15-10)))\n");
+    returns_status = isBalancedParanthethes("{{2+3)/((3+3)*(15-10)))");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /***********************************************/
+        createEmptyStack(&new_stak);
+         printf("{(2+3(/((3+3)*(15-10))}\n");
+    returns_status = isBalancedParanthethes("{(2+3(/((3+3)*(15-10))}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /***************************************************/
+        createEmptyStack(&new_stak);
+         printf("{(2+3)/((3+3(*)15-10))}\n");
+    returns_status = isBalancedParanthethes("{(2+3)/((3+3(*)15-10))}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /*******************************************************/
+        createEmptyStack(&new_stak);
+         printf("})2+3)/((3+3)*(15-10))}\n");
+    returns_status = isBalancedParanthethes("})2+3)/((3+3)*(15-10))}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+        /***********************************************************/
+        createEmptyStack(&new_stak);
+         printf("{(2+3)/(<3+3>*(15-10))}\n");
+    returns_status = isBalancedParanthethes("{(2+3)/(<3+3>*(15-10))}");
+         if (returns_status == -1) {
+            printf("unbalanced expression\n");
+        }
+        else if (returns_status == -2)
+         {
+            printf("no paranthethes\n");
+        }
+        else
+        {
+            printf("expression is balanced\n");
+        }
+
